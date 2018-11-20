@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{03D8679A-25BD-494F-A03B-908AA35151E4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PersonalityAnalysis</RootNamespace>
+    <AssemblyName>PersonalityAnalysis</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="chart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chart.Designer.cs">
+      <DependentUpon>chart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chart1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chart1.Designer.cs">
+      <DependentUpon>chart1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eightquestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eightquestion.Designer.cs">
+      <DependentUpon>eightquestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eightquestionans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eightquestionans.Designer.cs">
+      <DependentUpon>eightquestionans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fifthquestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fifthquestion.Designer.cs">
+      <DependentUpon>fifthquestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fifthquestionans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fifthquestionans.Designer.cs">
+      <DependentUpon>fifthquestionans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="firstquestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="firstquestion.Designer.cs">
+      <DependentUpon>firstquestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="firstQuestionAns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="firstQuestionAns.Designer.cs">
+      <DependentUpon>firstQuestionAns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forthquestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forthquestion.Designer.cs">
+      <DependentUpon>forthquestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forthquestionans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forthquestionans.Designer.cs">
+      <DependentUpon>forthquestionans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="friendprofile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="friendprofile.Designer.cs">
+      <DependentUpon>friendprofile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="line.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="line.Designer.cs">
+      <DependentUpon>line.cs</DependentUpon>
+    </Compile>
+    <Compile Include="list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="list.Designer.cs">
+      <DependentUpon>list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ninthquestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ninthquestion.Designer.cs">
+      <DependentUpon>ninthquestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ninthquestionanswer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ninthquestionanswer.Designer.cs">
+      <DependentUpon>ninthquestionanswer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pie.Designer.cs">
+      <DependentUpon>pie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profilecs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profilecs.Designer.cs">
+      <DependentUpon>Profilecs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="score.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="score.Designer.cs">
+      <DependentUpon>score.cs</DependentUpon>
+    </Compile>
+    <Compile Include="secondquestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="secondquestion.Designer.cs">
+      <DependentUpon>secondquestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="secondquestionans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="secondquestionans.Designer.cs">
+      <DependentUpon>secondquestionans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="seventhquestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seventhquestion.Designer.cs">
+      <DependentUpon>seventhquestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="seventhquestionans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seventhquestionans.Designer.cs">
+      <DependentUpon>seventhquestionans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signup.Designer.cs">
+      <DependentUpon>signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sixthquestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sixthquestion.Designer.cs">
+      <DependentUpon>sixthquestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sixthquestionans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sixthquestionans.Designer.cs">
+      <DependentUpon>sixthquestionans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="success.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="success.Designer.cs">
+      <DependentUpon>success.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tenthquestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tenthquestion.Designer.cs">
+      <DependentUpon>tenthquestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tenthquestionans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tenthquestionans.Designer.cs">
+      <DependentUpon>tenthquestionans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="thirdquestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="thirdquestion.Designer.cs">
+      <DependentUpon>thirdquestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="thirdquestionans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="thirdquestionans.Designer.cs">
+      <DependentUpon>thirdquestionans.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="chart.resx">
+      <DependentUpon>chart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart1.resx">
+      <DependentUpon>chart1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eightquestion.resx">
+      <DependentUpon>eightquestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eightquestionans.resx">
+      <DependentUpon>eightquestionans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fifthquestion.resx">
+      <DependentUpon>fifthquestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fifthquestionans.resx">
+      <DependentUpon>fifthquestionans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="firstquestion.resx">
+      <DependentUpon>firstquestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="firstQuestionAns.resx">
+      <DependentUpon>firstQuestionAns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forthquestion.resx">
+      <DependentUpon>forthquestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forthquestionans.resx">
+      <DependentUpon>forthquestionans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="friendprofile.resx">
+      <DependentUpon>friendprofile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="line.resx">
+      <DependentUpon>line.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="list.resx">
+      <DependentUpon>list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ninthquestion.resx">
+      <DependentUpon>ninthquestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ninthquestionanswer.resx">
+      <DependentUpon>ninthquestionanswer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pie.resx">
+      <DependentUpon>pie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profilecs.resx">
+      <DependentUpon>Profilecs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="score.resx">
+      <DependentUpon>score.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="secondquestion.resx">
+      <DependentUpon>secondquestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="secondquestionans.resx">
+      <DependentUpon>secondquestionans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="seventhquestion.resx">
+      <DependentUpon>seventhquestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="seventhquestionans.resx">
+      <DependentUpon>seventhquestionans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signup.resx">
+      <DependentUpon>signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sixthquestion.resx">
+      <DependentUpon>sixthquestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sixthquestionans.resx">
+      <DependentUpon>sixthquestionans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="success.resx">
+      <DependentUpon>success.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tenthquestion.resx">
+      <DependentUpon>tenthquestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tenthquestionans.resx">
+      <DependentUpon>tenthquestionans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="thirdquestion.resx">
+      <DependentUpon>thirdquestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="thirdquestionans.resx">
+      <DependentUpon>thirdquestionans.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
